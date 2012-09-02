@@ -57,9 +57,9 @@ if has("autocmd")
   " Use real tabs in Makefiles
   au FileType make set noexpandtab
 
-  " Remember last cursor location in file
+  " Remember cursor location in file, except for git commit message
   au BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") | 
+    \ if &filetype != 'gitcommit' && line("'\"") > 1 && line("'\"") <= line("$") |
     \ exe "normal! g'\"" |
     \ endif
 endif
