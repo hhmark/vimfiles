@@ -48,6 +48,10 @@ set incsearch
 set ignorecase
 set smartcase
 
+"" Temporary files
+set backupdir=~/.vim/.tmp,~/.tmp,/var/tmp,/tmp
+set directory=~/.vim/.tmp,~/.tmp,/var/tmp,/tmp
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
