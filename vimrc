@@ -37,10 +37,8 @@ set expandtab
 set smarttab
 set backspace=indent,eol,start
 set autoindent
-" Show trailing spaces as dots
 set list
-set listchars=""
-set listchars=trail:⋅
+set listchars=tab:\ \ ,trail:⋅
 
 "" Searching
 set hlsearch
@@ -56,8 +54,8 @@ set directory=~/.vim/.tmp,~/.tmp,/var/tmp,/tmp
 " CUSTOM AUTOCMDS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("autocmd")
-  " In Makefiles, use real tabs and display them as spaces
-  au FileType make set noexpandtab | set listchars+=tab:\ \ 
+  " Use real tabs in Makefiles
+  au FileType make set noexpandtab
 
   " Remember last cursor location in file
   au BufReadPost *
