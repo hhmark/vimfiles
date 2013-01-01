@@ -1,7 +1,7 @@
 ""
 "" Thanks:
 ""   Mislav Marohnić <github.com/mislav>
-""   Gary Bernhardt <github.com/garybernhardt> 
+""   Gary Bernhardt <github.com/garybernhardt>
 ""
 
 set nocompatible
@@ -84,3 +84,10 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGIN SETTINGS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Command-T
+map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+let g:CommandTMaxHeight=10
