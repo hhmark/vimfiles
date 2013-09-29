@@ -75,9 +75,7 @@ let mapleader=","
 
 " Open files in directory of current file
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>e :e  %%
-map <leader>sp :sp %%
-map <leader>vs :vs %%
+map <leader>e :e %%
 
 " Move around splits with <c-hjkl>
 nnoremap <c-j> <c-w>j
@@ -91,3 +89,6 @@ nnoremap <c-l> <c-w>l
 " Command-T
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 let g:CommandTMaxHeight=10
+
+" Tabular
+map <leader>t :Tabularize<space>/
